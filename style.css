@@ -1,35 +1,27 @@
 * {
   box-sizing: border-box;
+  margin: 0 auto;
+  font-family: sans-serif;
+  /*font-size: 2em;*/
+}
+#masthead {
+  /*border: 1px solid blue;*/
+  margin-top: 2%;
+  text-align: center;
 }
 #wrapper {
-  border: 1px solid green;
-  height: 100%;
-  width: 100%;
-  display: -webkit-flex;
-  display: flex;
+  /*border: 1px solid green;*/
+  height: 30%;
+  width: 60%;
+  margin-top: 3%;
 }
 .panels{
-  border: 1px solid orange;
-  height: 200px;
-  width: 200px;
-/*change width and height to percentages after js is working*/
-}
-.initial {
-  -webkit-flex: initial;
-  flex: initial;
-  width: 200px;
-  min-width: 100px;
-}
-.none {
-  -webkit-flex: none;
-  flex: none;
-  width: 200px;
-}
-.flex1 {
-  -webkit-flex: 1;
-  flex: 1;
-}
-.flex2 {
-  -webkit-flex: 2;
-  flex: 2;
+  border: 1px solid gray;
+  float: left;
+  height: 100px;
+  width: 100px;
+  padding: 1%;
+  text-align: center;
+  font-size: .8em;
+  margin: 5px 5px 5px 7px;
 }
