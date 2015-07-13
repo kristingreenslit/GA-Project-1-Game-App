@@ -1,11 +1,12 @@
-$(document).ready (function(){
+$(document).ready(function(){
 
-user clicks on first square
-> event listener for button click
+// user clicks on first square
+// > event listener for button click
 
-$(".tiles").on("click", function(){
-
-})
+$(".tiles2").click(function(){
+  $(this).removeclass();
+  console.log("this");
+});
 
 // first square content is revealed
 // > on click reveal button content
@@ -23,8 +24,4 @@ $(".tiles").on("click", function(){
 // if squares don't match, both squares flip back to hidden state
 // >boolean for a non-winning play
 // >visually represent "try again"
-
-
-
-
 });

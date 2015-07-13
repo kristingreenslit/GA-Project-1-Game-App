@@ -26,4 +26,25 @@
   font-size: .8em;
   margin: 5px;
   border-radius: 3%;
+  background-color: lightskyblue;
+  transition: all .4s ease-in-out;
 }
+.tiles2 {
+  border: 1px solid gray;
+  /*float: left;*/
+  /*display: block;*/
+  height: 100px;
+  width: 100px;
+  padding: 2px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: .8em;
+  margin: 5px;
+  border-radius: 3%;
+  background-color: lightskyblue;
+  transition: all .4s ease-in-out;
+}
+/*.fliptiles {
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+}*/
