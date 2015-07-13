@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+#wrapper {
+  border: 1px solid green;
+  height: 100%;
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+}
+.panels{
+  border: 1px solid orange;
+  height: 200px;
+  width: 200px;
+/*change width and height to percentages after js is working*/
+}
+.initial {
+  -webkit-flex: initial;
+  flex: initial;
+  width: 200px;
+  min-width: 100px;
+}
+.none {
+  -webkit-flex: none;
+  flex: none;
+  width: 200px;
+}
+.flex1 {
+  -webkit-flex: 1;
+  flex: 1;
+}
+.flex2 {
+  -webkit-flex: 2;
+  flex: 2;
+}
