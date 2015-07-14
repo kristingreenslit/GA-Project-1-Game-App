@@ -1,12 +1,22 @@
 $(document).ready(function(){
 
-var tilesChosen = 0;
+var firstTileChosen = 0;
+var secondTileChosen = 0;
 
-$( "button" ).click(function() {
+$( "#set1 button" ).click(function() {
   $( this ).toggleClass( "tiles2" );
-  tilesChosen++;
-  console.log(tilesChosen);
-  // for (i = 0, i < 2, i++);
+  firstTileChosen++;
+  for (i = 0; i < 1; i++) {
+      console.log("hi");
+  }
+});
+
+$( "#set2 button" ).click(function() {
+  $( this ).toggleClass( "tiles2" );
+  firstTileChosen++;
+  for (i = 0; i < 1; i++) {
+      console.log("hi");
+  }
 });
 
 
