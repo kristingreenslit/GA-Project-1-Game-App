@@ -37,3 +37,18 @@
   color: white;
   background-color: lightskyblue;
 }
+#reset {
+  top: 3%;
+  border: 1px solid gray;
+  height: 50px;
+  width: 100px;
+  padding: 2px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: .8em;
+  margin: 5px;
+  border-radius: 3%;
+  outline: none;
+  color: white;
+  background-color: lightskyblue;
+}
