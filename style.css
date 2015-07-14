@@ -3,21 +3,14 @@
   font-family: sans-serif;
 }
 #masthead {
-  /*border: 1px solid blue;*/
   margin-top: 2%;
   text-align: center;
 }
 #wrapper {
   /*border: 1px solid green;*/
-  /*height: 100%;
-  width: 100%;*/
-  /*margin-top: 3%;*/
-  /*margin: 0 auto;*/
 }
 .tiles1 {
   border: 1px solid gray;
-  /*float: left;*/
-  /*display: block;*/
   height: 100px;
   width: 100px;
   padding: 2px;
@@ -26,12 +19,12 @@
   font-size: .8em;
   margin: 5px;
   border-radius: 3%;
-  background-color: lightskyblue;
+  outline: none;
+  color: mediumaquamarine;
+  background-color: mediumaquamarine;
 }
 .tiles2 {
   border: 1px solid gray;
-  /*float: left;*/
-  /*display: block;*/
   height: 100px;
   width: 100px;
   padding: 2px;
@@ -40,9 +33,7 @@
   font-size: .8em;
   margin: 5px;
   border-radius: 3%;
-  background-color: lightcyan;
+  outline: none;
+  color: white;
+  background-color: lightskyblue;
 }
-/*.fliptiles {
-  -webkit-transform: rotateX(0deg) rotateY(0deg);
-  -moz-transform: rotateX(0deg) rotateY(0deg);
-}*/
