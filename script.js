@@ -1,32 +1,45 @@
-$(document).ready(function(){
+// $(document).ready(function(){
 
-  var clickCounter = 0;
-  var tileChoices = [];
-  var TileChosen;
+  var clickCounter = 1;
+  var tileChoiceText = [];
+  var tileChoice1;
+  var tileChoice2;
 
 $( "button" ).click(function() {
-    var TileChosen = this;
+    tileChoiceText.push($(this).text());
+    $( this ).attr("disabled", "disabled");
     $( this ).addClass( "tiles2" );
     $( this ).removeClass( "tiles1" );
-    clickCounter++;
-    tileChoices.push($( this ).html());
-    $( this ).attr("disabled", "disabled");
-      // if ($(".tiles2").attr("disabled", "disabled")){
-      //   window.location.reload(true);
-      // }
-        if (tileChoices[0] === tileChoices[1]) {
-           console.log("you win!");
-           tileChoices = [];
-           alert("you win!");
-        } else if (clickCounter % 2 === 0){
-           if (tileChoices[0] !== tileChoices[1]) {
-             $("TileChosen").click( function() {
-               $(this).css("background", "red");
-              });
+    console.log(this);
+      if (clickCounter % 2 === 1) {
+        tileChoice1 = $(this).attr("id");
+        clickCounter++;
+      }
+      else if (clickCounter % 2 === 0){
+        tileChoice2 = $(this).attr("id");
+          if (tileChoiceText[0] !== tileChoiceText[1]) {
+             tileChoice1.addClass( "tiles1" );
+             tileChoice1.removeClass( "tiles2" );
+             tileChoice2.addClass( "tiles1" );
+             tileChoice2.removeClass( "tiles2" );
             alert("try again!");
-          }}
-        });
+          }
+        }
       });
+
+    console.log(tileChoiceText);
+
+        else if (tileChoiceText[0] === tileChoiceText[1]) {
+           console.log("you win!");
+           tileChoiceText = [];
+           alert("you win!");
+        }
+
+      });
+
+      });
+
+ });
 
 
 
