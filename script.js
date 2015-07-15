@@ -1,26 +1,30 @@
 $(document).ready(function(){
 
   var clickCounter = 0;
-  var actualClicks = [];
+  var tilesChosen = [];
 
 $( "button" ).click(function() {
     $( this ).addClass( "tiles2" );
     $( this ).removeClass( "tiles1" );
     clickCounter++;
-    actualClicks.push($( this ).text());
+    tilesChosen.push($( this ).html());
     $( this ).attr("disabled", "disabled");
-    if (clickCounter % 2 === 0){
-      if (actualClicks[0] !== actualClicks[1]) {
-        $( this ).addClass( "tiles2" );
-        $( this ).removeClass( "tiles1" );
-        alert("try again!");
+      // if ($(".tiles2").attr("disabled", "disabled")){
+      //   window.location.reload(true);
+      // }
+        if (tilesChosen[0] === tilesChosen[1]) {
+           console.log("you win!");
+           tilesChosen = [];
+           alert("you win!");
+        } else if (clickCounter % 2 === 0){
+           if (tilesChosen[0] !== tilesChosen[1]) {
+        // $( tilesChosen ).addClass( "tiles2" );
+           $( ".tiles1" ).removeClass(".tiles2");
+           alert("try again!");
+        };
+           console.log(tilesChosen);
       }
-      else if (actualClicks[0] === actualClicks[1]) {
-        console.log("you win!");
-        actualClicks = [];
-        alert("you win!");
-      }
-    }
+    });
   });
 
     // $("#reset").click(window.onload);
@@ -34,4 +38,3 @@ $( "button" ).click(function() {
         scrambleTiles.eq(target).before(scrambleTiles.eq(target2));
         }
       }
-});

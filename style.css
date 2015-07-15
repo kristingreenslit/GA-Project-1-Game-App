@@ -10,7 +10,7 @@
   /*border: 1px solid green;*/
 }
 .tiles1 {
-  border: 1px solid gray;
+  border: 5px solid mediumaquamarine;
   height: 100px;
   width: 100px;
   padding: 2px;
@@ -24,7 +24,7 @@
   background-color: mediumaquamarine;
 }
 .tiles2 {
-  border: 1px solid gray;
+  border: 5px solid mediumaquamarine;
   height: 100px;
   width: 100px;
   padding: 2px;
@@ -34,8 +34,8 @@
   margin: 5px;
   border-radius: 3%;
   outline: none;
-  color: white;
-  background-color: lightskyblue;
+  color: mediumaquamarine;
+  background-color: white;
 }
 /*#reset {
   margin-top: 5%;
