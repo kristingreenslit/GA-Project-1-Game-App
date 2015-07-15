@@ -3,33 +3,35 @@ $(document).ready(function(){
   var clickCounter = 0;
   var actualClicks = [];
 
-  $( "button" ).click(function() {
+$( "button" ).click(function() {
     $( this ).addClass( "tiles2" );
     $( this ).removeClass( "tiles1" );
     clickCounter++;
     actualClicks.push($( this ).text());
+    $( this ).attr("disabled", "disabled");
     if (clickCounter % 2 === 0){
       if (actualClicks[0] !== actualClicks[1]) {
-        console.log("try again!");
         $( this ).addClass( "tiles2" );
         $( this ).removeClass( "tiles1" );
-        console.log(this);
+        alert("try again!");
       }
       else if (actualClicks[0] === actualClicks[1]) {
-          console.log("you win!");
-          actualClicks = [];
-          $( this ).attr("disabled", "disabled");
+        console.log("you win!");
+        actualClicks = [];
+        alert("you win!");
       }
-    };
+    }
   });
+
+    // $("#reset").click(window.onload);
+    window.onload = rearrangeTiles;
+
+     function rearrangeTiles() {
+        var scrambleTiles = $(".tiles1");
+        for(var i = 0; i < scrambleTiles.length; i++){
+        var target = Math.floor(Math.random() * scrambleTiles.length -1) + 1;
+        var target2 = Math.floor(Math.random() * scrambleTiles.length -1) +1;
+        scrambleTiles.eq(target).before(scrambleTiles.eq(target2));
+        }
+      }
 });
-
-  // if clickcounter is 1 just flip dont do anything else\
-
-  // if clickcounter is even
-    // test to see if its a match, if it is
-      // do nothing
-    // if its not a match we want to flip the cards back over
-
-  // if its odd
-    // just flip

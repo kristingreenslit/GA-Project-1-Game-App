@@ -37,8 +37,8 @@
   color: white;
   background-color: lightskyblue;
 }
-#reset {
-  top: 3%;
+/*#reset {
+  margin-top: 5%;
   border: 1px solid gray;
   height: 50px;
   width: 100px;
@@ -51,4 +51,4 @@
   outline: none;
   color: white;
   background-color: lightskyblue;
-}
+}*/
