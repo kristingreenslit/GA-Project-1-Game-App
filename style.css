@@ -9,7 +9,7 @@
 #wrapper {
   /*border: 1px solid green;*/
 }
-.tiles1 {
+div button{
   border: 1px solid gray;
   height: 100px;
   width: 100px;
@@ -20,20 +20,12 @@
   margin: 5px;
   border-radius: 3%;
   outline: none;
+}
+.tiles1 {
   color: mediumaquamarine;
   background-color: mediumaquamarine;
 }
 .tiles2 {
-  border: 1px solid gray;
-  height: 100px;
-  width: 100px;
-  padding: 2px;
-  vertical-align: middle;
-  text-align: center;
-  font-size: .8em;
-  margin: 5px;
-  border-radius: 3%;
-  outline: none;
   color: white;
   background-color: lightskyblue;
 }
