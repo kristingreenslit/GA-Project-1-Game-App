@@ -10,7 +10,7 @@
   /*border: 1px solid green;*/
 }
 #reset{
-  border: 1px solid mediumaquamarine;
+  border: 2px solid mediumaquamarine;
   height: 40px;
   width: 100px;
   text-align: center;
@@ -20,6 +20,17 @@
   font-size: .8em;
   cursor: pointer;
   color: mediumaquamarine;
+}
+#correct-guesses, #incorrect-guesses {
+  height: 20px;
+  width: 150px;
+  padding: 10px;
+  margin-left: 5px;
+  font-size: .8em;
+  color: mediumaquamarine;
+}
+#incorrect-guesses {
+  margin-bottom: 10px;
 }
 .tiles1, .tiles2 {
   border: 1px solid gray;
@@ -42,18 +53,3 @@
   color: white;
   background-color: lightskyblue;
 }
-/*#reset {
-  margin-top: 5%;
-  border: 1px solid gray;
-  height: 50px;
-  width: 100px;
-  padding: 2px;
-  vertical-align: middle;
-  text-align: center;
-  font-size: .8em;
-  margin: 5px;
-  border-radius: 3%;
-  outline: none;
-  color: white;
-  background-color: lightskyblue;
-}*/
