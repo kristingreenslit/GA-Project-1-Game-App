@@ -1,38 +1,39 @@
 $(document).ready(function(){
 
   var clickCounter = 0;
-  var actualClicks = [];
+  var userClicks = [];
   var elementsClicked = [];
 
-$( "button" ).click(function() {
-    actualClicks.push($( this ).html());
-    $( this ).attr("disabled", "disabled"); // prevents user from accidental click on the same tile
-    $( this ).addClass( "tiles2" );
-    $( this ).removeClass( "tiles1" );
-    elementsClicked.push( this );
-    if (clickCounter === 0){
+  $( "#reset" ).click(function(){
+    window.location.reload(true)
+  })
 
-    }
-    if (clickCounter === 1){
-         clickCounter = -1;
-         if (actualClicks[0] !== actualClicks[1]) {
-             setTimeout(flipBack, 1000);
-             console.log("try again!");
-         } else if (actualClicks[0] === actualClicks[1]) {
-             console.log("you win!");
-             $(elementsClicked[1]).css("visibility","hidden");
-             $(elementsClicked[0]).css("visibility","hidden");
-             actualClicks = [];
-             elementsClicked = [];
-         }
-    }
-    clickCounter++;
-  });
+  $( "button" ).click(function() {
+      userClicks.push($( this ).html());
+      $( this ).attr("disabled", "disabled"); // prevents user from accidental click on the same tile
+      $( this ).addClass( "tiles2" );
+      $( this ).removeClass( "tiles1" );
+      elementsClicked.push( this );
+      if (clickCounter === 1){
+           clickCounter = -1;
+           if (userClicks[0] !== userClicks[1]) {
+               setTimeout(flipBack, 1000);
+               console.log("try again!");
+           } else if (userClicks[0] === userClicks[1]) {
+               console.log("you win!");
+               $(elementsClicked[1]).css("visibility","hidden");
+               $(elementsClicked[0]).css("visibility","hidden");
+               userClicks = [];
+               elementsClicked = [];
+           }
+      }
+      clickCounter++;
+    });
 
   function flipBack(){
     $(elementsClicked[0]).addClass("tiles1").removeClass("tiles2").removeAttr("disabled");
     $(elementsClicked[1]).addClass("tiles1").removeClass("tiles2").removeAttr("disabled");
-    actualClicks = [];
+    userClicks = [];
     elementsClicked = [];
   }
 

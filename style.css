@@ -9,7 +9,19 @@
 #wrapper {
   /*border: 1px solid green;*/
 }
-div button{
+#reset{
+  border: 1px solid mediumaquamarine;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  font-size: .8em;
+  cursor: pointer;
+  color: mediumaquamarine;
+}
+.tiles1, .tiles2 {
   border: 1px solid gray;
   height: 100px;
   width: 100px;
@@ -24,6 +36,7 @@ div button{
 .tiles1 {
   color: mediumaquamarine;
   background-color: mediumaquamarine;
+  cursor: pointer;
 }
 .tiles2 {
   color: white;
