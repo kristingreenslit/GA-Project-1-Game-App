@@ -13,8 +13,8 @@ $(document).ready(function(){
   $( "button" ).click(function() {
       userClicks.push($( this ).html());
       $( this ).attr("disabled", "disabled"); // prevents user from accidental click on the same tile
-      $( this ).addClass( "tiles2" );
-      $( this ).removeClass( "tiles1" );
+      $( this ).addClass( "reveal" );
+      $( this ).removeClass( "conceal" );
       elementsClicked.push( this );
       if (clickCounter === 1){
            clickCounter = -1;
@@ -36,8 +36,8 @@ $(document).ready(function(){
     });
 
   function flipBack(){
-    $(elementsClicked[0]).addClass("tiles1").removeClass("tiles2").removeAttr("disabled");
-    $(elementsClicked[1]).addClass("tiles1").removeClass("tiles2").removeAttr("disabled");
+    $(elementsClicked[0]).addClass("conceal").removeClass("reveal").removeAttr("disabled");
+    $(elementsClicked[1]).addClass("conceal").removeClass("reveal").removeAttr("disabled");
     userClicks = [];
     elementsClicked = [];
   }
@@ -47,7 +47,7 @@ $(document).ready(function(){
 //     window.onload = rearrangeTiles;
 //
 //      function rearrangeTiles() {
-//         var scrambleTiles = $(".tiles1");
+//         var scrambleTiles = $(".conceal");
 //         var quantityTiles = scrambleTiles.length -1;
 //         for(var i = 0; i < scrambleTiles.length; i++){
 //         var target = Math.floor(Math.random() * quantityTiles) + 1;

@@ -3,11 +3,7 @@
   font-family: sans-serif;
 }
 #masthead {
-  margin-top: 2%;
   text-align: center;
-}
-#wrapper {
-  /*border: 1px solid green;*/
 }
 #reset{
   border: 2px solid mediumaquamarine;
@@ -32,7 +28,7 @@
 #incorrect-guesses {
   margin-bottom: 10px;
 }
-.tiles1, .tiles2 {
+.conceal, .reveal {
   border: 1px solid gray;
   height: 100px;
   width: 100px;
@@ -44,12 +40,12 @@
   border-radius: 3%;
   outline: none;
 }
-.tiles1 {
+.conceal {
   color: mediumaquamarine;
   background-color: mediumaquamarine;
   cursor: pointer;
 }
-.tiles2 {
+.reveal {
   color: white;
   background-color: lightskyblue;
 }
