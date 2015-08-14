@@ -26,7 +26,7 @@ $(document).ready(function(){
            if (userClicks[0] !== userClicks[1]) {
                setTimeout(flipBack, 250);
                userIncorrectGuesses++;
-               document.getElementById("incorrect-guesses").innerHTML = "Incorrect = " + userIncorrectGuesses;
+               document.getElementById("incorrect-guesses").innerHTML = "Incorrect Guesses = " + userIncorrectGuesses;
            } else if (userClicks[0] === userClicks[1]) {
                console.log("you win!");
                $(elementsClicked[1]).css("visibility","hidden");
@@ -34,7 +34,7 @@ $(document).ready(function(){
                userClicks = [];
                elementsClicked = [];
                userCorrectGuesses++;
-               document.getElementById("correct-guesses").innerHTML = "Correct = " + userCorrectGuesses;
+               document.getElementById("correct-guesses").innerHTML = "Correct Guesses = " + userCorrectGuesses;
            }
       }
       clickCounter++;

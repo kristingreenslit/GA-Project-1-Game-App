@@ -4,6 +4,7 @@
 }
 #masthead {
   text-align: center;
+  color: black;
 }
 #reset{
   border: 2px solid mediumaquamarine;
@@ -12,18 +13,21 @@
   text-align: center;
   padding: 10px;
   margin-left: 5px;
-  margin-bottom: 15px;
   font-size: .8em;
   cursor: pointer;
   color: mediumaquamarine;
+  text-align: center;
+  margin: 0 auto;
 }
 #correct-guesses, #incorrect-guesses {
   height: 20px;
-  width: 150px;
+  width: 200px;
   padding: 10px;
   margin-left: 5px;
-  font-size: .8em;
+  font-size: .9em;
   color: mediumaquamarine;
+  margin: 0 auto;
+  text-align: center;
 }
 #incorrect-guesses {
   margin-bottom: 10px;
