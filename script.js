@@ -7,8 +7,13 @@ $(document).ready(function(){
   var elementsClicked = [];
 
   $( "#reset" ).click(function(){
-    window.location.reload(true)
-  })
+    // window.location.reload(true);
+    var container = $("#wrapper");
+    var allTiles = $("#box");
+      for (var i = 1; i < allTiles.length; i++);
+        container.append(allTiles.eq(Math.floor(Math.random() * allTiles.length)));
+  });
+
 
   $( "button" ).click(function() {
       userClicks.push($( this ).html());
@@ -42,17 +47,4 @@ $(document).ready(function(){
     elementsClicked = [];
   }
 
-
-    // $("#reset").click(window.onload);
-//     window.onload = rearrangeTiles;
-//
-//      function rearrangeTiles() {
-//         var scrambleTiles = $(".conceal");
-//         var quantityTiles = scrambleTiles.length -1;
-//         for(var i = 0; i < scrambleTiles.length; i++){
-//         var target = Math.floor(Math.random() * quantityTiles) + 1;
-//         var target2 = Math.floor(Math.random() * quantityTiles) + 1;
-//         scrambleTiles.eq(target).before(scrambleTiles.eq(target2));
-//         }
-//       }
 });
