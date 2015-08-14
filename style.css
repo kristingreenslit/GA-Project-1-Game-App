@@ -1,37 +1,69 @@
+@media (min-width: 320px) {
+  #wrapper {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 500px) {
+  #wrapper {
+    width: 470px;
+  }
+}
+
+@media (min-width: 685px) {
+  #wrapper {
+    width: 685px;
+  }
+}
+
 * {
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+#wrapper {
+  width: 685px;
+  margin: 0 auto;
+}
+
 #masthead {
   text-align: center;
-  color: black;
+  color: #696969;
 }
+
 #reset{
-  border: 2px solid mediumaquamarine;
+  border: 2px solid #696969;
   height: 40px;
-  width: 100px;
+  width: 200px;
   text-align: center;
   padding: 10px;
   margin-left: 5px;
-  font-size: .8em;
+  font-size: .9em;
+  font-weight: bold;
   cursor: pointer;
   color: mediumaquamarine;
   text-align: center;
   margin: 0 auto;
+  color: #696969;
 }
+
 #correct-guesses, #incorrect-guesses {
   height: 20px;
   width: 200px;
-  padding: 10px;
+  padding: 5px;
   margin-left: 5px;
   font-size: .9em;
-  color: mediumaquamarine;
+  font-weight: bold;;
+  color: #696969;
   margin: 0 auto;
   text-align: center;
 }
+
 #incorrect-guesses {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
+
 .conceal, .reveal {
   border: 1px solid gray;
   height: 100px;
@@ -44,11 +76,13 @@
   border-radius: 3%;
   outline: none;
 }
+
 .conceal {
   color: mediumaquamarine;
   background-color: mediumaquamarine;
   cursor: pointer;
 }
+
 .reveal {
   color: white;
   background-color: lightskyblue;
