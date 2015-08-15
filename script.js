@@ -6,14 +6,9 @@ $(document).ready(function(){
   var userClicks = [];
   var elementsClicked = [];
 
-  $( "#reset" ).click(function(){
-    // window.location.reload(true);
-    var container = $("#wrapper");
-    var allTiles = $("#box");
-      for (var i = 1; i < allTiles.length; i++);
-        container.append(allTiles.eq(Math.floor(Math.random() * allTiles.length)));
+  $("#reset").click(function() {
+    window.location.reload(true);
   });
-
 
   $( "button" ).click(function() {
       userClicks.push($( this ).html());
