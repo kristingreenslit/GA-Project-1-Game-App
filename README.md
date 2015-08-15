@@ -1,4 +1,5 @@
-## GA-Project-1-Game-App (Memory Game: Tax Deductions for Freelancers)
+## Memory Game: Tax Deductions for Freelancers
+### GA-Project-1-Game-App
 
 ##### User Stories:
 
