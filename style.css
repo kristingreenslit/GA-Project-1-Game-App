@@ -66,13 +66,73 @@
 }
 
 @media (max-width: 700px) {
+
   #wrapper {
     width: 455px;
+  }
+
+  #masthead {
+    font-size: 1.5em;
+  }
+
+  .conceal, .reveal {
+    height: 62px;
+    width: 62px;
+    font-size: .4em;
+  }
+
+  .conceal {
+    color: mediumaquamarine;
+    background-color: mediumaquamarine;
+    cursor: pointer;
+  }
+
+  .reveal {
+    color: white;
+    background-color: lightskyblue;
+  }
+
+  #reset{
+    height: 40px;
+    width: 100px;
+    font-size: .7em;
   }
 }
 
 @media (max-width: 485px) {
   #wrapper {
     width: 340px;
+  }
+
+  #masthead {
+    font-size: 20px;
+  }
+
+  #correct-guesses, #incorrect-guesses {
+    font-size: .8em;
+  }
+
+  .conceal, .reveal {
+    height: 44px;
+    width: 44px;
+    font-size: 6px;
+    margin: 4px;
+  }
+
+  .conceal {
+    color: mediumaquamarine;
+    background-color: mediumaquamarine;
+    cursor: pointer;
+  }
+
+  .reveal {
+    color: white;
+    background-color: lightskyblue;
+  }
+
+  #reset{
+    height: 35px;
+    width: 80px;
+    font-size: .6em;
   }
 }
