@@ -30,7 +30,7 @@ My initial approach in CSS was to create two identical divs of buttons and layer
 There is also an attribute added to each button to disable it after it's been clicked. Before this line of code was introduced, a user was able to click on the same button twice, which evaluated incorrectly as a win.
 
 ##### Features to Add:
-- "Play Again" button that would clear the tiles and scramble their order
+- Button that would scramble the order of the tiles
 
 ##### Disclaimer:
 
